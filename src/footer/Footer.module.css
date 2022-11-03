@@ -1,0 +1,34 @@
+.footerBlock {
+    background-color: #da94ef;
+}
+
+.footerContainer {
+    background-color: #5cb0d7;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footerContainer h3 {
+    margin-top: 0;
+}
+
+.title {
+    background-color: #fff;
+}
+
+.footer {
+    border: 1px solid white;
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    background-color: #602b2b;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+}

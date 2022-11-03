@@ -1,0 +1,21 @@
+.mainBlock {
+    height: 100vh;
+    background-color: #9cd39b;
+}
+.mainContainer {
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #da8282;
+}
+
+
+.greeting {
+    width: 300px;
+    background-color: #fff;
+}
+
+.photo {
+    width: 300px;
+    height: 400px;
+    border: 1px solid white;
+}
