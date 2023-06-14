@@ -15,9 +15,19 @@
 
 .contacts{
     border: 1px solid white;
-    width: 200px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 20px;
+}
+
+.contacts input, .contacts textarea {
+    width: 100%;
+}
+
+@media screen and (max-width: 360px) {
+    .contacts {
+        width: 100%;
+    }
 }

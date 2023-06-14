@@ -29,10 +29,18 @@
 
 .title {
     background-color: #87c8de;
+    text-align: center;
+    margin: 0;
 }
 
 
 .description {
     width: 100%;
     background-color: #fff;
+    text-align: center;
+}
+@media screen and (max-width: 380px) {
+    .project {
+        width: 250px
+    }
 }

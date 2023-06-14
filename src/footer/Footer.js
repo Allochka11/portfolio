@@ -8,14 +8,14 @@ export const Footer = (props) => {
     return (
         <div className={s.footerBlock}>
             <div className={`${styleContainer.container} ${s.footerContainer} `}>
-                <h3 className={s.title}>Alla Velychko</h3>
-                <div className={s.footer}>
+                <h2 className={s.title}>Alla Velychko</h2>
+                <div className={s.footerIcons}>
                     <div className={s.icon}></div>
                     <div className={s.icon}></div>
                     <div className={s.icon}></div>
                     <div className={s.icon}></div>
                 </div>
-                <span>© 2022 All rights reserved</span>
+                <span className={s.copyright}>© 2022 All rights reserved</span>
             </div>
         </div>
     );

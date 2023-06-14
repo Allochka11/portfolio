@@ -3,4 +3,11 @@
     width: 300px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 221px){
+    .nav {
+        justify-content: space-around;
+    }
 }
