@@ -6,6 +6,10 @@
     flex-wrap: wrap;
 }
 
+.nav a {
+    color: #fff;
+}
+
 @media screen and (max-width: 221px){
     .nav {
         justify-content: space-around;
