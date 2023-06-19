@@ -1,5 +1,5 @@
 .contactsBlock {
-    height: 100vh;
+    min-height: 70vh;
     background-color: #343a40;
     padding: 100px 0;
 }
@@ -22,6 +22,22 @@
 
 .contacts input, .contacts textarea {
     width: 100%;
+}
+.button {
+    position: relative;
+    z-index: 1;
+    border-radius: 30px;
+    border: 1px solid #6c757d;
+    font-weight: 500;
+    padding: 0.8rem 2.6rem;
+    transition: all .5s ease;
+    color: #6c757d;
+    background-color: rgba(255, 255, 255, 0.73);
+}
+
+.button:hover{
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #1ec997;
 }
 
 @media screen and (max-width: 360px) {

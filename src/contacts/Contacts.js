@@ -15,7 +15,7 @@ export const Contacts = (props) => {
                     <input type="text" placeholder='Phone'/>
                     <textarea name="" id="" cols="2" rows="6" placeholder='Message'></textarea>
                 </form>
-                <button>Send</button>
+                <button className={s.button}>Send</button>
             </div>
         </div>
     );
