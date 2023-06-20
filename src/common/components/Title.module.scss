@@ -1,23 +1,28 @@
-.title {
-    margin-bottom: 20px;
-    text-align: center;
-}
+@import "../styles/sass/variables";
 
-.title::after {
-    content:"";
+.title {
+  margin-bottom: 20px;
+  text-align: center;
+
+  &::after {
+    content: "";
     display: block;
     width: 80px;
     height: 3px;
-    background-color: #20c997;
-    margin: 0 auto ;
-}
+    background-color: $accentColor;
+    margin: 0 auto;
+  }
 
-.title h2 {
+  & h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     margin: 0 0 10px 0;
-    color: #fff;
+    color: $textMainColor;
     font-size: 36px;
     line-height: 1.5;
     text-transform: capitalize;
+  }
 }
+
+
+

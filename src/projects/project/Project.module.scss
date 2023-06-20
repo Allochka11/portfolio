@@ -1,0 +1,72 @@
+@import "../../common/styles/sass/variables";
+
+.project {
+  background-color: $textBgDarkerColor;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 48px;
+
+  .imgContainer {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #343a40;
+      opacity: 0.4;
+    }
+
+    .button a {
+      position: relative;
+      z-index: 1;
+      border-radius: 30px;
+      border: 1px solid $textBgLighterColor;
+      font-weight: 500;
+      padding: 0.8rem 2.6rem;
+      transition: all .5s ease;
+      color: $textBgLighterColor;
+      background-color: $hoverDarkerColor;
+    }
+
+    & a:hover {
+      background-color: $hoverLighterColor;
+      color: $accentColor;
+    }
+
+  }
+
+  .projectInfo {
+    padding: 20px 25px;
+
+    .projectTitle {
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      --bs-text-opacity: 1;
+      color: $descriptionColor;
+      line-height: 1.8;
+      margin-top: 0;
+    }
+  }
+}
+
+
+
+
+

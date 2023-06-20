@@ -1,0 +1,33 @@
+@import "../../common/styles/sass/variables";
+
+.skill {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+
+  .icon {
+    width: 60px;
+    height: 60px;
+    background-color: $textMainColor;
+  }
+
+  .title {
+    margin: 10px 0;
+  }
+
+  .description {
+    color: $descriptionColor;
+  }
+
+}
+
+
+/*.title {*/
+/*    background-color: #fff;*/
+/*}*/
+
+
+
