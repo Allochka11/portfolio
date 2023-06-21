@@ -1,0 +1,49 @@
+@import "../common/styles/sass/variables";
+
+.mainBlock {
+
+  padding: 120px 0 100px 0;
+  background-color: $textBgLighterColor;
+
+  .mainContainer {
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: $textBgLighterColor;
+
+    .greeting {
+      width: 300px;
+
+      @media screen and (max-width: 375px) {
+        text-align: center;
+      }
+
+      .greenText {
+        color: $accentColor;
+        text-transform: uppercase;
+      }
+    }
+
+    .photo {
+      width: 300px;
+
+      @media screen and (max-width: 380px) {
+        width: 200px;
+  
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+

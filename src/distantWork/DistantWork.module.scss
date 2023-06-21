@@ -1,0 +1,14 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
+.distantWorkBlock {
+
+  padding: 100px 0;
+  background-color: $textBgDarkerColor;
+
+  .distantWorkContainer {
+    min-height: 35vh;
+    background-color: $textBgDarkerColor;
+    @include flex(column);
+  }
+}

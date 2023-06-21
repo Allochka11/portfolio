@@ -16,6 +16,7 @@ function App() {
             <Projects/>
             <DistantWork/>
             <Contacts/>
+            {/*<ContactForm/>*/}
             <Footer/>
         </div>
     );

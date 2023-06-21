@@ -1,0 +1,18 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
+.header {
+  height: 80px;
+  padding-right: 10px;
+  background-color: $textBgDarkerColor;
+  @include flex($justifyContent: flex-end);
+
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+
+  @media screen and (max-width: 360px) {
+    height: 60px;
+  }
+}
+

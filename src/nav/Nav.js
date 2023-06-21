@@ -1,11 +1,12 @@
 import React from "react";
-import s from './Nav.module.css';
+import s from './Nav.module.scss';
 
-export const Nav= () => {
-    const scrollToSection = (event, sectionId) => {
+export const Nav = () => {
+
+    const scrollToSection = (event, selector) => {
         event.preventDefault();
-        const section = document.querySelector(`#${sectionId}`);
-        section.scrollIntoView({ behavior: 'smooth' });
+        const section = document.querySelector(`#${selector}`);
+        section.scrollIntoView({behavior: 'smooth'})
     };
 
     return (

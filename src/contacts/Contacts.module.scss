@@ -1,0 +1,68 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
+.contactsBlock {
+  min-height: 70vh;
+  background-color: $textBgLighterColor;
+  padding: 100px 0;
+
+  .contactsContainer {
+    background-color: $textBgLighterColor;
+    text-align: center;
+    @include flex(column);
+
+
+    .contacts {
+      position: relative;
+      width: 70%;
+      @include flex(column, $alignItems: normal);
+
+      margin-bottom: 20px;
+
+      @media screen and (max-width: 360px) {
+        width: 90%;
+      }
+
+      input, textarea {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: $hoverLighterColor;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease;
+        font-size: 16px;
+        color: #333;
+        margin: 10px 0;
+
+        &:focus {
+          outline: none;
+          background-color: $textMainColor;
+        }
+      }
+
+    }
+
+    .button {
+      position: absolute;
+      border-radius: 30px;
+      border: 1px solid $textBgLighterColor;
+      padding: 0.8rem 2.6rem;
+      transition: all .5s ease;
+      color: $textBgLighterColor;
+      background-color: $hoverDarkerColor;
+      top: 310px;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      cursor: pointer;
+
+      &:hover {
+        background-color: $hoverLighterColor;
+        color: $accentColor;
+      }
+    }
+
+
+  }
+}
+
+

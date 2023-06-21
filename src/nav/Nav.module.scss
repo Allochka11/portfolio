@@ -1,0 +1,16 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
+.nav {
+  //border: 1px solid;
+  width: 300px;
+  @include flex($justifyContent: space-between);
+
+  & a {
+    color: $textMainColor;
+  }
+
+  @media screen and (max-width: 221px) {
+    justify-content: space-around;
+  }
+}

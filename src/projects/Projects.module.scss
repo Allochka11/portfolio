@@ -1,4 +1,5 @@
 @import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
 
 .projectsBlock {
   /*min-height: 100vh;*/
@@ -12,10 +13,7 @@
 
     .projects {
       width: 100%;
-      display: flex;
-      justify-content: space-around;
-      align-items: flex-start;
-      flex-wrap: wrap;
+      @include flex($justifyContent: space-around, $alignItems: flex-start);
       margin-top: 30px;
     }
   }
