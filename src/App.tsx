@@ -1,3 +1,4 @@
+import React from "react";
 import './App.css';
 import {Header} from "./header/Header";
 import {Main} from "./main/Main";
@@ -16,7 +17,6 @@ function App() {
             <Projects/>
             <DistantWork/>
             <Contacts/>
-            {/*<ContactForm/>*/}
             <Footer/>
         </div>
     );
