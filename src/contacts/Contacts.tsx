@@ -1,11 +1,11 @@
-import React, {useState} from "react";
+import React, {ChangeEvent, useState} from "react";
 import s from './Contacts.module.scss';
 import styleContainer from '../common/styles/Container.module.scss'
 import {Title} from "../common/components/Title";
 import axios from "axios";
 
 
-export const Contacts = (props) => {
+export const Contacts = () => {
 
     const [submit, setSubmit] = useState(false);
     const [name, setName] = useState('');
@@ -25,7 +25,7 @@ export const Contacts = (props) => {
     //         // Можно выполнить соответствующие действия, например, показать сообщение об ошибке
     //     }
     // };
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
 
         axios({
@@ -40,7 +40,7 @@ export const Contacts = (props) => {
                 message: message,
                 phone: phone,
             }
-        }).then((response) => {
+        }).then(() => {
             setSubmit(true)
             setName('');
             setMessage('');
@@ -49,19 +49,19 @@ export const Contacts = (props) => {
         });
     }
 
-    const handleNameChange = (e) => {
+    const handleNameChange = (e: ChangeEvent<HTMLInputElement>) => {
         const newName = e.target.value;
         setName(newName);
     };
-    const handleEmailChange = (e) => {
+    const handleEmailChange = (e: ChangeEvent<HTMLInputElement>) => {
         const newEmail = e.target.value;
         setEmail(newEmail);
     };
-    const handlePhoneChange = (e) => {
+    const handlePhoneChange = (e: ChangeEvent<HTMLInputElement>) => {
         const newPhone = e.target.value;
         setPhone(newPhone);
     };
-    const handleMessageChange = (e) => {
+    const handleMessageChange = (e: ChangeEvent<HTMLTextAreaElement>) => {
         const newMessage = e.target.value;
         setMessage(newMessage);
     };
@@ -73,18 +73,16 @@ export const Contacts = (props) => {
                 <div className={`${styleContainer.container} ${s.contactsContainer} `}>
                     <Title title={'contacts'}/>
                     <form className={s.contacts}>
-                        {/*<TextField fullWidth label="fullWidth" id="fullWidth"/>*/}
                         <input type="text" placeholder='Name' name='name' onChange={handleNameChange} value={name}
                                required/>
                         <input type="text" placeholder='Phone' name='phone' required onChange={handlePhoneChange}
                                value={phone}/>
                         <input type="email" placeholder='Email' name='email' required value={email}
                                onChange={handleEmailChange}/>
-                        <textarea name="message" id="" cols="2" rows="6" placeholder='Message' required
+                        <textarea name="message" rows={6} id="" placeholder='Message' required
                                   onChange={handleMessageChange} value={message}
 
                         ></textarea>
-
                         <button className={s.button} onClick={handleSubmit}>
                             Send
                         </button>

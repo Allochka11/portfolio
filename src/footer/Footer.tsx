@@ -9,12 +9,12 @@ import {faViber} from "@fortawesome/free-brands-svg-icons/faViber";
 import {faLinkedin} from "@fortawesome/free-brands-svg-icons/faLinkedin";
 
 
-export const Footer = (props) => {
+export const Footer = () => {
 
     return (
         <div className={s.footerBlock}>
             <div className={`${styleContainer.container} ${s.footerContainer} `}>
-              
+
                 <div className={s.footerIcons}>
                     <a href="sms:+380951529370"><FontAwesomeIcon className={s.icon} icon={faPhone}/></a>
                     <a href="tel:+380951529370">
@@ -23,7 +23,7 @@ export const Footer = (props) => {
                     <a href="viber://chat?number=+380951529370">
                         <FontAwesomeIcon className={s.icon} icon={faViber}/>
                     </a>
-                    <a href="https://www.linkedin.com/in/alla-velychko/" target="_blank">
+                    <a href="https://www.linkedin.com/in/alla-velychko/" target="_blank" rel="noreferrer noopener">
                         <FontAwesomeIcon className={s.icon} icon={faLinkedin}/>
                     </a>
 

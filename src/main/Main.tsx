@@ -1,10 +1,9 @@
 import React, {useEffect, useState} from "react";
 import s from './Main.module.scss';
 import styleContainer from '../common/styles/Container.module.scss'
-import photo from '../assets/avatar.jpg'
+import photo from '../assets/avatar2.jpeg'
 
-
-export const Main = (props) => {
+export const Main = () => {
     const [text, setText] = useState("");
     const fullText = "frontend react developer";
 

@@ -14,6 +14,8 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
+    "@types/css-modules": "^1.0.2",
+    "@types/file-loader": "^5.0.1",
     "axios": "^1.4.0",
     "eslint": "8.22.0",
     "gh-pages": "^4.0.0",
@@ -22,6 +24,7 @@
     "react-scripts": "5.0.1",
     "sass": "^1.63.4",
     "styled-components": "^6.0.0-rc.3",
+    "typescript": "^5.1.3",
     "web-vitals": "^2.1.0"
   },
   "scripts": {

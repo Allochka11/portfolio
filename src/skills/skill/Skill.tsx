@@ -1,7 +1,8 @@
 import React from "react";
 import s from './Skill.module.scss';
 
-export const Skill = (props) => {
+
+export const Skill = (props: { title: string, description: string }) => {
 
     return (
         <div className={s.skill}>

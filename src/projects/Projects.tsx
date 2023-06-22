@@ -3,11 +3,11 @@ import s from './Projects.module.scss';
 import styleContainer from '../common/styles/Container.module.scss'
 import {Project} from "./project/Project";
 import {Title} from "../common/components/Title";
-import todoImg from '../assets/todo2.jpeg';
+import todoImg from '../assets/todo.jpeg';
 import socialImg from '../assets/social.jpeg';
 
 
-export const Projects = (props) => {
+export const Projects = () => {
     const social = {
         backgroundImage: `url(${socialImg})`
     }
