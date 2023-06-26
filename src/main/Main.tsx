@@ -1,7 +1,21 @@
 import React, {useEffect, useState} from "react";
 import s from './Main.module.scss';
-import styleContainer from '../common/styles/Container.module.scss'
-import photo from '../assets/avatar2.jpeg'
+import styleContainer from '../common/styles/Container.module.scss';
+import ParticlesContainer from "../common/components/Particles";
+
+
+//
+// const particlesOpt = {
+//     particles: {
+//         number: {
+//             value: 150,
+//             density: {
+//                 enable: true,
+//                 value_area: 800
+//             }
+//         }
+//     }
+// }
 
 export const Main = () => {
     const [text, setText] = useState("");
@@ -28,16 +42,21 @@ export const Main = () => {
 
     }, []);
 
+
     return (
         <div className={s.mainBlock} id='about'>
+
+            <ParticlesContainer/>
             <div className={`${styleContainer.container} ${s.mainContainer}`}>
+
+
                 <div className={s.greeting}>
                     <span>Hi there! I am</span>
                     <h1>Alla Velychko</h1>
                     <span>I am <h5 className={s.greenText}>{text}</h5></span>
                 </div>
                 <div className={s.photo}>
-                    <img src={photo} alt=""/>
+                    <div className={s.image}></div>
                 </div>
             </div>
         </div>
