@@ -8,9 +8,21 @@
 
   & a {
     color: $textMainColor;
+
+    &:hover {
+      color: $accentColor;
+    }
+  }
+
+  .active {
+    color: $accentColor;
   }
 
   @media screen and (max-width: 221px) {
     justify-content: space-around;
+  }
+
+  @media screen and (max-width: 400px) {
+    display: none;
   }
 }

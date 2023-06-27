@@ -1,0 +1,71 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
+.burgerNav {
+  //border: 1px solid;
+  width: 100%;
+  height: 100%;
+  background-color: $textBgDarkerColor;
+
+
+  .burgerNavItems {
+    @include flex(column, $justifyContent: center, $alignItems: center, $flexWrap: nowrap);
+    position: absolute;
+    right: 0;
+    left: 0;
+    transform: translate(0, -150px);
+    transition: 0.7s;
+    height: 0;
+    background-color: $textBgDarkerColor;
+
+    padding: 30px;
+    line-height: 2;
+
+    & a {
+      color: $textMainColor;
+
+      &:hover {
+        color: $accentColor;
+      }
+    }
+
+    .active {
+      color: $accentColor;
+    }
+  }
+
+  .show {
+    height: 150px;
+    transform: translate(0, 0);
+    transition: 0.7s;
+  }
+
+  .burgerBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    padding: 20px;
+
+
+    .line {
+      width: 20px;
+      height: 2px;
+      background-color: $accentColor;
+      margin: 2px 0;
+      transition: background-color 0.3s ease;
+    }
+  }
+
+
+  @media screen and (max-width: 221px) {
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 400px) {
+    display: none;
+  }
+}

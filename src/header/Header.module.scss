@@ -7,11 +7,13 @@
   background-color: $textBgDarkerColor;
   @include flex($justifyContent: flex-end);
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 2;
+  opacity: 0.7;
 
-  @media screen and (max-width: 360px) {
-    height: 60px;
-  }
+  //@media screen and (max-width: 360px) {
+  //  height: 60px;
+  //}
 }
 

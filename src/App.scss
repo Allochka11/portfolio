@@ -1,0 +1,19 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.preloaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
