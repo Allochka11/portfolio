@@ -2,10 +2,10 @@
 
 .mainBlock {
 
-  padding: 120px 0 100px 0;
+  padding: 130px 0 100px 0;
   background-color: $textBgLighterColor;
   position: relative;
-  
+
   .mainContainer {
     align-items: center;
     justify-content: space-evenly;
@@ -13,7 +13,8 @@
 
     .greeting {
       width: 300px;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
+
 
       @media screen and (max-width: 375px) {
         text-align: center;
@@ -26,7 +27,7 @@
     }
 
     .photo {
-      width: 300px;
+      //width: 300px;
       position: relative;
       z-index: 0;
 
@@ -43,7 +44,11 @@
           height: 360px;
           width: 260px;
           transition: .5s;
-
+        }
+        @media screen and (max-width: 420px) {
+          height: 260px;
+          width: 160px;
+          transition: .5s;
         }
 
         &::before {
@@ -55,9 +60,7 @@
           left: 15px;
           top: -15px;
           position: absolute;
-          @media screen and (max-width: 380px) {
-            width: 90%;
-          }
+
         }
       }
     }

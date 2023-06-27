@@ -24,7 +24,7 @@ const ParticlesContainer = () => {
             loaded={particlesLoaded}
             options={
                 {
-                    fpsLimit: 120,
+                    fpsLimit: 80,
                     interactivity: {
                         events: {
                             onClick: {
@@ -39,11 +39,11 @@ const ParticlesContainer = () => {
                         },
                         modes: {
                             push: {
-                                quantity: 4,
+                                quantity: 1,
                             },
                             repulse: {
-                                distance: 200,
-                                duration: 0.4,
+                                distance: 100,
+                                duration: 0.1,
                             },
                         },
                     },
@@ -55,7 +55,7 @@ const ParticlesContainer = () => {
                             color: "#ffffff",
                             distance: 150,
                             enable: true,
-                            opacity: 0.5,
+                            opacity: 0.3,
                             width: 1,
                         },
                         collisions: {
@@ -68,7 +68,7 @@ const ParticlesContainer = () => {
                                 default: "bounce",
                             },
                             random: false,
-                            speed: 6,
+                            speed: 4,
                             straight: false,
                         },
                         number: {

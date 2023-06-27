@@ -3,6 +3,7 @@ import s from './Contacts.module.scss';
 import styleContainer from '../common/styles/Container.module.scss'
 import {Title} from "../common/components/Title";
 import axios from "axios";
+import {Fade} from "react-awesome-reveal";
 
 
 export const Contacts = () => {
@@ -70,25 +71,29 @@ export const Contacts = () => {
     return (
         <div className={s.contactsBlock} id='contacts'>
             {!submit ?
-                <div className={`${styleContainer.container} ${s.contactsContainer} `}>
-                    <Title title={'contacts'}/>
-                    <form className={s.contacts}>
-                        <input type="text" placeholder='Name' name='name' onChange={handleNameChange} value={name}
-                               required/>
-                        <input type="text" placeholder='Phone' name='phone' required onChange={handlePhoneChange}
-                               value={phone}/>
-                        <input type="email" placeholder='Email' name='email' required value={email}
-                               onChange={handleEmailChange}/>
-                        <textarea name="message" rows={6} id="" placeholder='Message' required
-                                  onChange={handleMessageChange} value={message}
+                <Fade>
+                    <div className={`${styleContainer.container} ${s.contactsContainer} `}>
 
-                        ></textarea>
-                        <button className={s.button} onClick={handleSubmit}>
-                            Send
-                        </button>
 
-                    </form>
-                </div>
+                        <Title title={'contacts'}/>
+                        <form className={s.contacts}>
+                            <input type="text" placeholder='Name' name='name' onChange={handleNameChange} value={name}
+                                   required/>
+                            <input type="text" placeholder='Phone' name='phone' required onChange={handlePhoneChange}
+                                   value={phone}/>
+                            <input type="email" placeholder='Email' name='email' required value={email}
+                                   onChange={handleEmailChange}/>
+                            <textarea name="message" rows={6} id="" placeholder='Message' required
+                                      onChange={handleMessageChange} value={message}
+
+                            ></textarea>
+                            <button className={s.button} onClick={handleSubmit}>
+                                Send
+                            </button>
+                        </form>
+
+                    </div>
+                </Fade>
                 : <div className={`${styleContainer.container} ${s.contactsContainer} `}>
                     <h4>Thanks for your message! I'll check my email and respond to you!</h4>
                 </div>

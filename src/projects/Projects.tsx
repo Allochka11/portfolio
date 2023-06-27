@@ -3,8 +3,11 @@ import s from './Projects.module.scss';
 import styleContainer from '../common/styles/Container.module.scss'
 import {Project} from "./project/Project";
 import {Title} from "../common/components/Title";
+// @ts-ignore
 import todoImg from '../assets/todo.jpeg';
+// @ts-ignore
 import socialImg from '../assets/social.jpeg';
+import {Fade, Reveal, Slide} from "react-awesome-reveal";
 
 
 export const Projects = () => {
@@ -17,15 +20,17 @@ export const Projects = () => {
 
     return (
         <div className={s.projectsBlock} id='projects'>
-            <div className={`${styleContainer.container} ${s.projectsContainer} `}>
-                <Title title={'projects'}/>
+            <Fade>
+                <div className={`${styleContainer.container} ${s.projectsContainer} `}>
+                    <Title title={'projects'}/>
 
-                <div className={s.projects}>
-                    <Project style={social} title='Social network' description='description'/>
-                    <Project style={todo} title='Todolist'
-                             description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}/>
+                    <div className={s.projects}>
+                        <Project style={social} title='Social network' description='description'/>
+                        <Project style={todo} title='Todolist'
+                                 description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}/>
+                    </div>
                 </div>
-            </div>
+            </Fade>
         </div>
     );
 };
