@@ -60,6 +60,11 @@
         background-color: $hoverLighterColor;
         color: $accentColor;
       }
+
+      &:disabled {
+        background-color: $hoverLighterColor;
+        color: #6c757d;
+      }
     }
 
 

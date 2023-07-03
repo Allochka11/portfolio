@@ -14,7 +14,7 @@
     .skills {
       margin: 30px 0 0 0;
       width: 100%;
-      @include flex($justifyContent: space-between) ;
+      @include flex($justifyContent: space-evenly) ;
 
       @media screen and (max-width: 629px) {
         justify-content: center;

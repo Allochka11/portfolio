@@ -7,7 +7,7 @@ export const Skill = (props: { title: string, description?: string, style: { bac
     return (
         <div className={s.skill}>
             <div className={s.icon} style={props.style}></div>
-            <h4 className={s.title}>{props.title}</h4>
+            <h5 className={s.title}>{props.title}</h5>
             <span className={s.description}>{props.description}</span>
         </div>
     );

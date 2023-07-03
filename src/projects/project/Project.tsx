@@ -13,7 +13,6 @@ export const Project = (props: ProjectPropsType) => {
     return (
         <div className={s.project}>
             <div className={s.imgContainer} style={props.style}>
-                {/*<div className={s.button}><a href="#">Open</a></div>*/}
                 <a href="/#" className={s.button}><Button title={'Open'}/></a>
             </div>
             <div className={s.projectInfo}>

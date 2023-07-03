@@ -48,9 +48,6 @@ const ParticlesContainer = () => {
                         },
                     },
                     particles: {
-                        color: {
-                            value: "#ffffff",
-                        },
                         links: {
                             color: "#ffffff",
                             distance: 150,
@@ -58,18 +55,10 @@ const ParticlesContainer = () => {
                             opacity: 0.3,
                             width: 1,
                         },
-                        collisions: {
-                            enable: true,
-                        },
                         move: {
-                            direction: "none",
                             enable: true,
-                            outModes: {
-                                default: "bounce",
-                            },
                             random: false,
-                            speed: 4,
-                            straight: false,
+                            speed: 2,
                         },
                         number: {
                             density: {
@@ -77,15 +66,6 @@ const ParticlesContainer = () => {
                                 area: 800,
                             },
                             value: 80,
-                        },
-                        opacity: {
-                            value: 0.5,
-                        },
-                        shape: {
-                            type: "circle",
-                        },
-                        size: {
-                            value: {min: 1, max: 5},
                         },
                     },
                     detectRetina: false,
