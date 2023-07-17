@@ -25,7 +25,7 @@ export const Projects = () => {
                     <Title title={'projects'}/>
                     <div className={s.projects}>
                         <Project style={social} title='Social network' description='description'
-                                 url={'#'}/>
+                                 url={'https://allochka11.github.io/samurai/'}/>
                         <Project
                             style={todo} title='Todolist'
                             url={'https://allochka11.github.io/it-incubator-todolist-ts/'}

@@ -14,7 +14,7 @@ export const Project = (props: ProjectPropsType) => {
     return (
         <div className={s.project}>
             <div className={s.imgContainer} style={props.style}>
-                <a href={props.url} className={s.button} target={'_blank'}><Button
+                <a href={props.url} className={s.button} target={'_blank'} rel="noreferrer"><Button
                     title={'Open'}/></a>
             </div>
             <div className={s.projectInfo}>
