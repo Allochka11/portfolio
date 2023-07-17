@@ -23,11 +23,13 @@ export const Projects = () => {
             <Fade>
                 <div className={`${styleContainer.container} ${s.projectsContainer} `}>
                     <Title title={'projects'}/>
-
                     <div className={s.projects}>
-                        <Project style={social} title='Social network' description='description'/>
-                        <Project style={todo} title='Todolist'
-                                 description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}/>
+                        <Project style={social} title='Social network' description='description'
+                                 url={'#'}/>
+                        <Project
+                            style={todo} title='Todolist'
+                            url={'https://allochka11.github.io/it-incubator-todolist-ts/'}
+                            description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}/>
                     </div>
                 </div>
             </Fade>

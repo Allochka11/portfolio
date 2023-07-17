@@ -6,6 +6,7 @@ type ProjectPropsType = {
     style: { backgroundImage: string; }
     title: string
     description: string
+    url: string
 }
 
 export const Project = (props: ProjectPropsType) => {
@@ -13,7 +14,8 @@ export const Project = (props: ProjectPropsType) => {
     return (
         <div className={s.project}>
             <div className={s.imgContainer} style={props.style}>
-                <a href="/#" className={s.button}><Button title={'Open'}/></a>
+                <a href={props.url} className={s.button} target={'_blank'}><Button
+                    title={'Open'}/></a>
             </div>
             <div className={s.projectInfo}>
                 <h3 className={s.projectTitle}>{props.title}</h3>

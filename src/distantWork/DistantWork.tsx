@@ -6,7 +6,6 @@ import {Button} from "../common/components/Button";
 import {Fade} from "react-awesome-reveal";
 
 export const DistantWork = () => {
-
     return (
         <div className={s.distantWorkBlock}>
             <Fade>
