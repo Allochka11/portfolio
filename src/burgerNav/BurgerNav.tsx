@@ -30,10 +30,15 @@ export const BurgerNav = () => {
                 <a href="/#" className={activeTab === 'contacts' ? s.active : ''}
                    onClick={(e) => scrollToSection(e, 'contacts')}>Contacts</a>
             </div>
-            <div className={s.burgerBtn} onClick={onBtnClickHandler}>
-                <span className={s.line}></span>
-                <span className={s.line}></span>
-                <span className={s.line}></span>
+            <div className={`${s.burgerBtn} ${isOpenBtn ? s.open : ''}`} onClick={onBtnClickHandler}>
+                {!isOpenBtn ?
+                    <>
+                        <span className={s.line}></span>
+                        <span className={s.line}></span>
+                        <span className={s.line}></span>
+                    </>
+                    : <div className={s.closeIcon}></div>
+                }
             </div>
         </div>
     );

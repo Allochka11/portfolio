@@ -11,7 +11,7 @@ export const DistantWork = () => {
             <Fade>
                 <div className={`${styleContainer.container} ${s.distantWorkContainer}`}>
                     <Title title={"I'am looking for distant work"}/>
-                    <a href="/#"><Button title={'Hire me'}/></a>
+                    <a href="/#contacts"><Button title={'Hire me'}/></a>
                 </div>
             </Fade>
         </div>

@@ -18,8 +18,8 @@ export const Footer = () => {
                 <div className={`${styleContainer.container} ${s.footerContainer} `}>
 
                     <div className={s.footerIcons}>
-                        <a href="sms:+380951529370"><FontAwesomeIcon className={s.icon} icon={faPhone}/></a>
-                        <a href="tel:+380951529370">
+                        <a href="tel:380951529370"><FontAwesomeIcon className={s.icon} icon={faPhone}/></a>
+                        <a href={`tg://t.me/@ukrainka_26`}>
                             <FontAwesomeIcon className={s.icon} icon={faTelegram}/>
                         </a>
                         <a href="viber://chat?number=+380951529370">

@@ -16,6 +16,8 @@
   cursor: pointer;
 
   &:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
     background-color: $hoverLighterColor;
     color: $accentColor;
     cursor: pointer;
