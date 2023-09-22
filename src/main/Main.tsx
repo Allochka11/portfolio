@@ -15,7 +15,7 @@ export const Main = () => {
                     <span>Hi there! I am</span>
                     <h1>Alla Velychko</h1>
                     I am <h5 className={s.greenText}>
-                    <Typewriter text={'React Developer'} speed={100}/>
+                    <Typewriter text={'Front-end Developer'} speed={100}/>
                 </h5>
                 </div>
                 <div className={s.photo}>
